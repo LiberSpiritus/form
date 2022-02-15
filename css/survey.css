@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+@import "style.css";
+
+
+/* survey Layout *********************************/
+.surveyBg {background:#f0ebf8;}
+.surveyParent {margin: auto; max-width: 90vw; width: 640px;}
+.surveyHeader {margin-top: 12px; background-color: #fff; border: 1px solid #dadce0; border-radius: 8px; padding: 24px; padding-top: 22px; padding-bottom: 16px; position: relative;}
+.surveyHeaderBg {background-color: rgb(103, 58, 183); color: rgba(255, 255, 255, 1); border-top-left-radius: 8px; border-top-right-radius: 8px; height: 10px; left: -1px; position: absolute; top: -1px; width: calc(100% + 2px);}
+.serveyHeaderBody{padding-bottom: 12px;}
+.surveyItemList{margin-top: 12px;}
+.surveyTit {    
+	-webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #202124;
+    line-height: 135%;
+    max-width: 100%;
+    min-width: 0%;}
+.surveyBorder {border-top: 1px solid #dadce0; left: 0; position: absolute; width: 100%;}
+.surveyRequired {color: #d93025;font-family: Roboto,Arial,sans-serif;font-size: 14px;font-weight: 400;letter-spacing: .2px;line-height: 20px;margin-top: 12px;}
+.surveyDescription {
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .2px;
+    line-height: 20px;
+    color: #202124;
+    margin-top: 12px;		
+}  
+.surveyItemRoot{    -webkit-transition: background-color 200ms cubic-bezier(0,0,0.2,1);
+    transition: background-color 200ms cubic-bezier(0,0,0.2,1);
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 24px;
+    page-break-inside: avoid;
+    word-wrap: break-word;}
+.surveyItemHeader {font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 16px;
+    letter-spacing: .1px;
+    line-height: 24px;
+    color: #202124;
+    font-weight: 400;
+    width: 100%;
+    word-break: break-word; margin-bottom: 30px;}    
+.surveyItemHeader.Required::after {content:" *"; display: inline-block; color: #d93025;}
+.surveyItemInputEl {position:relative; -webkit-user-select: none; -webkit-tap-highlight-color: transparent; display: inline-block; outline: none; padding-bottom: 8px;}
+.surveyItemInputEl.address {width: 590px;}
+.surveyItemInputEl label {display:block; cursor:pointer;}
+.surveyItemInputEl label:first-of-type {margin-bottom: 20px;}
+.surveyItemInputEl input[type="radio"],.surveyItemInputEl input[type="checkbox"] {
+ 	width:16px; 
+ 	height:16px; 
+ 	border:2px solid #999;
+ 	transition: 0.2s all linear;
+  outline: none;
+  vertical-align: middle;
+  cursor: pointer; 
+ }
+.surveyItemInputEl input[type="radio"] {
+	-webkit-appearance: none;
+ 	-moz-appearance: none;
+ 	appearance: none;  
+ 	border:2px solid #999;
+ 	border-radius:50%;
+ }
+
+.surveyItemInputEl input[type="radio"]:checked {border: 6px solid #0075ff;}
+.surveyItemInputEl input[type="radio"]+span, .surveyItemInputEl input[type="checkbox"]+span {margin-left:10px; font-size:14px; font-family: "Google Sans",Roboto,Arial,sans-serif; position:relative; top:2px;}
+.surveyItemInputArea {position: relative; min-width: 0%;}
+.surveyItemInputArea .surveyInput {
+	width: 100%;
+    background-color: transparent;
+    border: none;
+    display: block;
+    font: 400 14px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    height: 24px;
+    line-height: 24px;
+    margin: 0;
+    min-width: 0%;
+    outline: none;
+    padding: 0;
+    z-index: 0;}
+.surveyRequiredText {display:none; position:relative; margin-top:10px; color:#d93025; font: 400 12px Roboto,RobotoDraft,Helvetica,Arial,sans-serif; height:24px; overflow:hidden;}
+/*.surveyRequiredText::before {content:url(https://ssl.gstatic.com/docs/forms/qp_sprite157.svg); position:relative; vertical-align:top; top:-730px; margin-right:5px;}*/
+.surveyRequiredText span {line-height:18px; }
+.surveyRequiredText.error{display:block;}  
+.surveyItemInputArea .surveyLabel {font-family: Roboto,Arial,sans-serif; font-size: 14px; font-weight: 400; letter-spacing: .2px; line-height: 20px; color: #70757a;}
+.surveySubmit {padding: 0 24px; margin-bottom: 10px; background-color:#673ab7; color:#FFF; border-radius:5px; font-family:"Google Sans",Roboto,Arial,sans-serif; font-size:14px; font-weight: 500; letter-spacing: .25px; line-height: 36px;}
